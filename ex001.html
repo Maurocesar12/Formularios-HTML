@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            color:black;
+        }
+        h1{
+            text-align: center;
+            background-color: red;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        p{
+            background: scroll;
+            background-color: grey;
+            padding: 50px;
+            font-size: x-large;
+            border-radius: 100px;
+        }
+        input{
+            font-size: larger;
+        }
+        #buttom{
+            text-align: center;
+            
+            
+        }
+    </style>
+</head>
+<body>
+   <h1> Formulario</h1>
+   <form action="cadastro.php" method="post" autocomplete="off">
+    <p><label for="nome"> <strong>Nome:</strong> </label> 
+        <input type="text" name="nome" id="nome" required minlength="5" size="10" placeholder="Nome do usuario"></p>
+    <p><label for="sobrenome"> <strong>Sobrenome:</strong></label> 
+        <input type="text" name="sobrenome" id="sobrenome" required size="10"></p>
+        <p> 
+            <label for="sen">Senha:</label>
+            <input type="password" name="sen" id="sen" required minlength="8" maxlength="20" size="10" >
+        </p>
+    <p id="buttom"> <input type="submit" value="Enviar"> </p>
+
+   </form>
+</body>
+</html>
